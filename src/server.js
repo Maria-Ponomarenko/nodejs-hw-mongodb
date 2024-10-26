@@ -18,7 +18,7 @@ export const setupServer = () => {
     },
   });
 
-  app.use(logger());
+  // app.use(logger());
 
   app.get('/contacts', async (req, res) => {
     const data = await contactServices.getContacts();
